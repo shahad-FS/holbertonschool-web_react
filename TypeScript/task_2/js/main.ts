@@ -62,3 +62,14 @@ function executeWork(employee: DirectorInterface | TeacherInterface): string {
   console.log(msg);
   return msg;
 }
+
+
+type Subjects = "Math" | "History";
+
+function teachClass(todayClass:Subjects): string {
+  if (todayClass === "Math") {
+    return "Teaching Math";
+  } else if (todayClass === "History") {
+    return "Teaching History";
+  }
+}
